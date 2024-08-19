@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.connectors-list,
+.create-connector,
+.performance-monitoring {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.connectors-list h2,
+.create-connector h2,
+.performance-monitoring h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.connectors-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.connector-info {
+    margin-bottom: 10px;
+}
+
+.connector-info h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.connector-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.connector-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connector-actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.connector-actions button:hover {
+    background-color: #45a049;
+}
+
+.perf {
+    margin-left: -450px;
+}
+
+.create-connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-connector button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+}
+
+.create-connector button:hover {
+    background-color: #1976D2;
+}
+
+.performance-monitoring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.performance-monitoring .chart {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .connectors-list,
+    .create-connector,
+    .performance-monitoring {
+        width: 95%;
+    }
+
+    .connector-actions {
+        flex-direction: column;
+    }
+
+    .connector-actions button {
+        margin-bottom: 5px;
+    }
+}
